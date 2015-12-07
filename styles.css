@@ -1,0 +1,203 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: #fafafa;
+	overflow-x: hidden;
+}
+
+.stretch {
+	clear: both;
+}
+
+.section-1 {
+	background-image: url('img/lake.jpg');
+	background-size: cover;
+	background-position: center;
+	padding: 150px 20px 100px 20%;
+}
+
+.section-1 h1 {
+	color: white;
+	font-size: 3em;
+	margin: 0;
+}
+
+.section-1 p {
+	color: white;
+	margin: 0;
+	margin-left: 10%;
+}
+
+footer {
+	background: #1B2024;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: #fff;
+	padding: 10px 40px;
+	display: inline-block;
+}
+
+footer a:hover {
+	background: #3A4249;
+	/*color: #26AD60;*/
+}
+
+.section-2 {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 50px 0;
+}
+
+.box {
+	width: 210px;
+	height: 210px;
+	position: relative;
+	margin: 10px;
+}
+
+.box img {
+	width: 200px;
+	height: 200px;
+	transition: 0.6s ease-in-out;
+}
+
+.box p {
+	transition: 0.6s ease-in-out;
+	position: absolute;
+	left: 0;
+	bottom: 3px;
+	width: 100%;
+}
+
+.box:hover p {
+	transform: translateX(30px);
+}
+
+.box:hover img {
+	transform: scale(1.2);
+}
+
+
+.half {
+	box-sizing: border-box;
+	width: 50%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	height: 420px;
+	box-sizing: border-box;
+	padding: 40px;
+	color: #fff;
+}
+
+.full {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+}
+
+.left {
+	float: left;
+	background-image: url('https://images.unsplash.com/photo-1439390916221-371302a6218d?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=7b57a605eff03f165024f8a405e6b870');
+}
+
+.left-cover {
+	background: #26AD60;
+}
+
+.right {
+	float: right;
+	background-image: url('https://images.unsplash.com/photo-1441742917377-57f78ee0e582?crop=entropy&fit=crop&fm=jpg&h=950&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=975');
+}
+
+.right-cover {
+	background: dodgerblue;
+}
+
+.half p {
+	text-align: center;
+	opacity: 1;
+	position: relative;
+}
+
+.half h1 {
+	opacity: 1;
+	position: relative;
+}
+
+
+.section-4 {
+	padding-top: 40px;
+}
+
+.project-container {
+	display: flex;
+	justify-content: center;
+}
+
+.project {
+	width: 200px;
+	margin: 20px 10px;
+	padding: 10px;
+	background: #fff;
+	border: thin solid lightgray;
+	position: relative;
+	box-shadow: 3px 3px 3px gray;
+}
+
+.project:hover {
+	cursor: pointer;
+}
+
+.project p {
+	text-align: center;
+}
+
+.project img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 0.6s ease-in-out;
+}
+
+.project:hover img {
+	display: block;
+	opacity: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 850px) {
+    .half {
+		display: block;
+		width: 100%;
+	}
+	
+	.project-container {
+		display: block;
+	}
+	
+	.project {
+		display: block;
+		width: 80%;
+		margin: auto;
+	}
+	
+	.project img {
+		width: 50%;
+		margin: auto;
+		display: block;
+	}
+}
