@@ -40,9 +40,14 @@ footer a {
 	display: inline-block;
 }
 
+footer b {
+	color: #fff;
+	padding: 10px 40px;
+	display: inline-block;
+}
+
 footer a:hover {
 	background: #3A4249;
-	/*color: #26AD60;*/
 }
 
 .section-2 {
@@ -133,9 +138,6 @@ footer a:hover {
 }
 
 
-.section-4 {
-	padding-top: 40px;
-}
 
 .project-container {
 	display: flex;
@@ -143,36 +145,78 @@ footer a:hover {
 }
 
 .project {
-	width: 200px;
-	margin: 20px 10px;
-	padding: 10px;
-	background: #fff;
-	border: thin solid lightgray;
+	width: 25vw;
+	height: 25vw;
+	display: inline-block;
 	position: relative;
-	box-shadow: 3px 3px 3px gray;
+	box-sizing: border-box;
+}
+
+.project-color {
+	opacity: 0.9;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 5;
+}
+
+.project-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	padding: 15%;
+	opacity: 1;
+	z-index: 50;
+	color: #fff;
+}
+
+.recipes {
+	background-image: url("img/onlineRecipes.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.flatnotes {
+	background-image: url("img/flatnotes.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.meteors {
+	background-image: url("img/meteors.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.racing {
+	background-image: url("img/jquery-racing.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.recipes-color {
+	background: red;
+}
+
+.flatnotes-color {
+	background: dodgerblue;
+}
+
+.meteors-color {
+	background: #26AD60;
+}
+
+.racing-color {
+	background: orangered;
 }
 
 .project:hover {
 	cursor: pointer;
-}
-
-.project p {
-	text-align: center;
-}
-
-.project img {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
-	transition: opacity 0.6s ease-in-out;
-}
-
-.project:hover img {
-	display: block;
-	opacity: 1;
 }
 
 
