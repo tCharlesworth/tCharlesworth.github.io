@@ -55,6 +55,8 @@ footer a:hover {
 	justify-content: center;
 	flex-wrap: wrap;
 	padding: 50px 0;
+    background-color: #1B2024;
+    color: #fff;
 }
 
 .box {
@@ -137,89 +139,51 @@ footer a:hover {
 	position: relative;
 }
 
-
-
-.project-container {
-	display: flex;
-	justify-content: center;
-}
-
 .project {
-	width: 25vw;
-	height: 25vw;
-	display: inline-block;
-	position: relative;
-	box-sizing: border-box;
+    width: 70%;
+    margin: 25px auto;
+    border: thin solid #1B2024;
+    border-radius: 4px;
+    overflow: hidden;
 }
 
-.project-color {
-	opacity: 0.9;
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 5;
+.project-image {
+    float: left;
+    width: 200px;
+    height: 200px;
 }
 
 .project-content {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	box-sizing: border-box;
-	padding: 15%;
-	opacity: 1;
-	z-index: 50;
-	color: #fff;
+    width: calc( 100% - 200px );
+    padding: 20px;
+    box-sizing: border-box;
+    float: right;
 }
 
-.recipes {
-	background-image: url("img/onlineRecipes.png");
-	background-size: cover;
-	background-position: center;
+.project-content h2 {
+    margin-top: 0;
 }
 
-.flatnotes {
-	background-image: url("img/flatnotes.png");
-	background-size: cover;
-	background-position: center;
+.project-links {
+    text-align: center;
 }
 
-.meteors {
-	background-image: url("img/meteors.png");
-	background-size: cover;
-	background-position: center;
+.project-links a, .project-links a:visited {
+    color: black;
+    text-decoration: none;
+    margin: 3px 10px;
 }
 
-.racing {
-	background-image: url("img/jquery-racing.png");
-	background-size: cover;
-	background-position: center;
+.project-links a:hover {
+    text-decoration: underline;
 }
 
-.recipes-color {
-	background: red;
+.section-5 {
+    color: #fff;
+    background-color: #1B2024;
+    text-align: center;
+    padding: 10px;
 }
-
-.flatnotes-color {
-	background: dodgerblue;
-}
-
-.meteors-color {
-	background: #26AD60;
-}
-
-.racing-color {
-	background: orangered;
-}
-
-.project:hover {
-	cursor: pointer;
-}
-
-
 
 
 
@@ -236,12 +200,36 @@ footer a:hover {
 	.project {
 		display: block;
 		width: 80%;
-		margin: auto;
+		margin: 10px auto;
 	}
 	
-	.project img {
-		width: 50%;
-		margin: auto;
-		display: block;
-	}
+	.project-image {
+        display: none;
+    }
+    
+    .project-content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .link-text {
+        display: none;
+    }
+    
+    .section-1 {
+        padding: 5px;
+    }
+    
+    .section-2 {
+        display: none;
+    }
+    
+    .half h1 {
+        margin-top: 0;
+    }
+    
+    .half {
+        height: auto;
+    }
 }
