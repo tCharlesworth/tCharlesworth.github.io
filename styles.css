@@ -38,6 +38,11 @@ footer a {
 	color: #fff;
 	padding: 10px 40px;
 	display: inline-block;
+    transition: 0.8s ease;
+}
+
+footer a:hover {
+    font-size: 1.1em;
 }
 
 footer b {
@@ -145,6 +150,7 @@ footer a:hover {
     border: thin solid #1B2024;
     border-radius: 4px;
     overflow: hidden;
+    box-shadow: 0 0 8px 1px #1B2024;
 }
 
 .project-image {
@@ -162,6 +168,7 @@ footer a:hover {
 
 .project-content h2 {
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .project-links {
@@ -174,8 +181,31 @@ footer a:hover {
     margin: 3px 10px;
 }
 
-.project-links a:hover {
-    text-decoration: underline;
+.underline-effect {
+	position: relative;
+}
+
+hr {
+    width: 50%;
+    text-align: left;
+    margin: 0;
+    border: linear-gradient(to right, #1B2024, rgba(0, 0, 0, 0));
+}
+
+.underline-effect:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 0;
+	height: 2px;
+	background-color: #1B2024;
+	content: '';
+	transition: width 0.2s;
+}
+	
+.underline-effect:hover:after {
+	width: 100%;
 }
 
 .section-5 {
