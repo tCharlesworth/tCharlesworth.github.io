@@ -147,10 +147,10 @@ footer a:hover {
 .project {
     width: 70%;
     margin: 25px auto;
-    border: thin solid #1B2024;
+    /*border: thin solid #666666;*/
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 0 8px 1px #1B2024;
+    box-shadow: 0 0 8px 1px #666666;
 }
 
 .project-image {
